@@ -1,0 +1,15 @@
+﻿#postContainer {
+    padding: 10px;
+    background-color: #4469B0;
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 50%;
+}
+
+.btn {
+    float: right;
+}
+
+#user, #messageArea {
+    width: 100%;
+}
