@@ -13,6 +13,10 @@ html {
   }
 }
 
+.ng-white {
+    background-color: #466BAE;
+}
+
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
