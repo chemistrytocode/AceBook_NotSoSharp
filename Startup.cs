@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using AcebookAPI.Models;
 
 namespace AceBook_CS_NotSoSharp
 {
@@ -22,6 +24,8 @@ namespace AceBook_CS_NotSoSharp
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddDbContext<AcebookContext>(opt => 
+                opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
