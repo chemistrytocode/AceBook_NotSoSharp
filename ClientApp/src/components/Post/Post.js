@@ -14,11 +14,11 @@ export class Post extends Component {
     var data = {
       user: "Default User",
       message: this.state.message,
-      timePosted: new Date().toLocaleString()
+      posted_At: new Date().toLocaleString()
     };
 
     console.log(data);
-    fetch("http://localhost:5000/post", {
+    fetch("https://localhost:5001/api/Acebook", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
