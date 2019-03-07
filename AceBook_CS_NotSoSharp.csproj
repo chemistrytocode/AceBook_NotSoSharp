@@ -19,6 +19,19 @@
     <Content Remove="$(SpaRoot)**" />
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+    <None Remove="ClientApp\src\components\NavBar\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu\NavMenu.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +39,8 @@
     <Folder Include="ClientApp\src\components\Home\" />
     <Folder Include="ClientApp\src\components\Post\" />
     <Folder Include="ClientApp\src\components\Feed\" />
+    <Folder Include="ClientApp\src\components\NavMenu\" />
+    <Folder Include="ClientApp\src\components\FriendsList\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->

@@ -12,7 +12,7 @@ export class Post extends Component {
   handleSubmit(event) {
     event.preventDefault();
     var data = {
-      user: this.state.user,
+      user: "Default User",
       message: this.state.message,
       timePosted: new Date().toLocaleString()
     };
@@ -39,16 +39,6 @@ export class Post extends Component {
               <div class="row form">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label id="postUser" class="col-form-label">
-                      User:
-                    </label>
-                    <input
-                      type="text"
-                      class="form-control col-sm"
-                      placeholder="Who are you?"
-                      name="user"
-                      onChange={this.logChange}
-                    />
                     <label id="postMessage" class="col-form-label">
                       Message:
                     </label>
@@ -56,7 +46,7 @@ export class Post extends Component {
                       class="form-control col"
                       id="messageArea"
                       placeholder="What's on your mind?"
-                      rows="6"
+                      rows="4"
                       name="message"
                       onChange={this.logChange}
                     />

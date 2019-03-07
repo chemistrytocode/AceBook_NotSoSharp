@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Post } from '../../components/Post/Post';
-import { Feed } from '../../components/Feed/Feed';
+import { Post } from '../Post/Post';
+import { Feed } from '../Feed/Feed';
+import { FriendsList } from '../FriendsList/FriendsList';
 
 export class Home extends Component {
   static displayName = Home.name;
