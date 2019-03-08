@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  acebook_cs_notsosharp:
+    image: ${DOCKER_REGISTRY-}acebookcsnotsosharp
+    build:
+      context: .
+      dockerfile: Dockerfile
