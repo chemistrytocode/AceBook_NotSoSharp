@@ -12,7 +12,7 @@ export class Feed extends Component {
   }
 
   componentDidMount() {
-    fetch("https://localhost:5001/api/Acebook")
+    fetch("/api/Acebook")
       .then(response => response.json())
       .then(posts => {
         this.setState({ posts: posts });

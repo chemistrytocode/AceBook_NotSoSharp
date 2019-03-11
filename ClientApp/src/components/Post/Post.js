@@ -18,7 +18,7 @@ export class Post extends Component {
     };
 
     console.log(data);
-    fetch("https://localhost:5001/api/Acebook", {
+    fetch("/api/Acebook", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
