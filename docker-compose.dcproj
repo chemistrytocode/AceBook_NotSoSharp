@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
+=======
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk" DefaultTargets="Build">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <ProjectGuid>{1A9ABB38-3035-4693-9691-5E8EDE39A2AC}</ProjectGuid>
+    <DockerLaunchBrowser>True</DockerLaunchBrowser>
+    <DockerServiceUrl>http://localhost:{ServicePort}</DockerServiceUrl>
+    <DockerServiceName>acebook_cs_notsosharp</DockerServiceName>
+>>>>>>> 66c838baf553e3a141ce743ed62ee390f2ee9df8
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
+<<<<<<< HEAD
     <None Include="docker-compose.yml" />
+=======
+    <None Include="docker-compose.yml" />
+>>>>>>> 66c838baf553e3a141ce743ed62ee390f2ee9df8
     <None Include=".dockerignore" />
   </ItemGroup>
 </Project>
