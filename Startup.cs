@@ -25,7 +25,7 @@ namespace AceBook_CS_NotSoSharp
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddDbContext<AcebookContext>(opt => 
-                opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+                opt.UseNpgsql(Configuration.GetConnectionString("HerokuDB")));
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
